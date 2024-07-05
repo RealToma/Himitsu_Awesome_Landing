@@ -13,7 +13,7 @@ const App = () => {
   const [isEntered, setIsEntered] = useState(false);
   const [isLoading, setLoading] = useState(true);
   const someRequest = (): Promise<void> => {
-    return new Promise((resolve) => setTimeout(() => resolve(), 4000));
+    return new Promise((resolve) => setTimeout(() => resolve(), 4500));
   };
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const StyledComponent = styled(Box)`
   width: 100%;
   height: 100%;
 
-  /* background-color: #121212; */
+  background-color: black;
 `;
 
 export default App;

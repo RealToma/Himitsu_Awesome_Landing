@@ -14,7 +14,7 @@ const Enter = ({ setIsEntered }: any) => {
   return (
     <StyledComponent isactive={clickedEnter ? 1 : 0}>
       <SectionLogo isactive={clickedEnter ? 1 : 0}>
-        <img src={"/assets/images/icons/logo.jpg"} width={"100%"} alt="logo" />
+        <img src={"/assets/images/icons/logo.png"} width={"100%"} alt="logo" />
       </SectionLogo>
       <SectionButton>
         <button
@@ -24,7 +24,7 @@ const Enter = ({ setIsEntered }: any) => {
           }}
         >
           <span className="glowing-txt">
-            C<span className="faulty-letter">L</span>ICK
+            E<span className="faulty-letter">N</span>TER
           </span>
         </button>
       </SectionButton>
@@ -36,6 +36,7 @@ const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
   height: 100vh;
+  background-color: black;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -78,7 +79,7 @@ const SectionButton = styled(Box)`
     border-radius: 0.45em;
     background: none;
     perspective: 2em;
-    font-family: "Raleway", sans-serif;
+    font-family: "Belleza", sans-serif;
     font-size: 2em;
     font-weight: 900;
     letter-spacing: 1em;
@@ -271,7 +272,7 @@ const TextEnter = styled(Box)`
 
   color: #c1ff72;
   text-align: center;
-  font-family: Garet;
+  font-family: Belleza;
   font-size: ${({ isactive }: any) => (isactive ? "30px" : "60px")};
   opacity: ${({ isactive }: any) => (isactive ? "0" : "1")};
   font-style: normal;
