@@ -1,13 +1,13 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
 import { LogoMain } from "../icons/logo";
-import { dataContactLink } from "../../data/links";
+import { dataSocialLink } from "../../data/links";
 
 const Footer = () => {
   return (
     <StyledComponent>
       <SectionGroupLink>
-        {dataContactLink.map((each, index) => {
+        {dataSocialLink.map((each, index) => {
           return (
             <a
               href={each.link}

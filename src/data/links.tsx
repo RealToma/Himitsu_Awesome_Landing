@@ -1,28 +1,28 @@
 import { FaXTwitter } from "react-icons/fa6";
-import { FaTelegramPlane, FaLink } from "react-icons/fa";
-import { SiGitbook } from "react-icons/si";
+import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
+// import { SiGitbook } from "react-icons/si";
 
-export const dataContactLink = [
-  {
-    name: "Telegram",
-    link: "https://telegram",
-    icon: <FaTelegramPlane />,
-  },
+export const dataSocialLink = [
   {
     name: "Twitter",
-    link: "https://twitter.com/pinlinkai",
+    link: "https://twitter.com/",
     icon: <FaXTwitter />,
   },
   {
-    name: "Web Link",
-    link: "https://pinlink.io",
-    icon: <FaLink />,
+    name: "Telegram",
+    link: "https://telegram/",
+    icon: <FaTelegramPlane />,
   },
   {
-    name: "Gitbook",
-    link: "https://pinlink.gitbook.io/pinlink",
-    icon: <SiGitbook />,
+    name: "Discord",
+    link: "https://pinlink.io",
+    icon: <FaDiscord />,
   },
+  // {
+  //   name: "Gitbook",
+  //   link: "https://pinlink.gitbook.io/pinlink",
+  //   icon: <SiGitbook />,
+  // },
 ];
 
 export const dataMenuLink = [
@@ -33,44 +33,21 @@ export const dataMenuLink = [
     typeDapp: true,
   },
   {
-    name: "Marketplace",
-    link: "/marketplace",
-    isDisable: false,
-    typeDapp: true,
-  },
-  {
-    name: "TokenizeRWA ",
-    link: "/tokenize ",
-    isDisable: true,
-    typeDapp: true,
-  },
-  {
-    name: "DePinAI",
-    link: "/depinai",
-    isDisable: true,
-    typeDapp: true,
-  },
-  {
-    name: "Stake $PIN",
-    link: "/stake",
-    isDisable: false,
-    typeDapp: true,
-  },
-  {
-    name: "Mint",
-    link: "/mint",
-    isDisable: false,
-    typeDapp: true,
-  },
-  // {
-  //   name: "Dashboard",
-  //   link: "/dashboard",
-  //   isDisable: false,
-  // },
-  {
     name: "About",
-    link: "https://pinlink.io/",
+    link: "/about",
     isDisable: false,
-    typeDapp: false,
+    typeDapp: true,
+  },
+  {
+    name: "Product",
+    link: "/product",
+    isDisable: true,
+    typeDapp: true,
+  },
+  {
+    name: "Roadmap",
+    link: "/roadmap",
+    isDisable: true,
+    typeDapp: true,
   },
 ];
