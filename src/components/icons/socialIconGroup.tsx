@@ -39,4 +39,13 @@ const ButtonSocial = styled(Box)`
     color: black;
     background-color: white;
   }
+
+  @media (max-width: 1440px) {
+    margin: 0px 10px;
+  }
+  @media (max-width: 1024px) {
+    margin: 0px 5px;
+    width: 35px;
+    font-size: 15px;
+  }
 `;

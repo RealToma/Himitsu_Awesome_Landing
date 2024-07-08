@@ -7,24 +7,7 @@ const Footer = () => {
   return (
     <StyledComponent>
       <SectionGroupLink>
-        {dataSocialLink.map((each, index) => {
-          return (
-            <a
-              href={each.link}
-              key={index}
-              style={{
-                textDecoration: "none",
-              }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SecionIcon key={index}>
-                <ImgIcon>{each.icon}</ImgIcon>
-                <TextIcon>{each.name}</TextIcon>
-              </SecionIcon>
-            </a>
-          );
-        })}
+       
       </SectionGroupLink>
     </StyledComponent>
   );

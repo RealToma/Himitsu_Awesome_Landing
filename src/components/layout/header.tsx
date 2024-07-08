@@ -28,7 +28,14 @@ const Header = () => {
           );
         })}
       </SectionLinks>
-      <SocialIconGroup />
+      <SectionSocial>
+        <SocialIconGroup />
+      </SectionSocial>
+      <ButtonMobileMenu onClick={() => setIsMobile(!isMobile)}>
+        <LineTop active={isMobile ? 1 : 0} />
+        <LineMiddle active={isMobile ? 1 : 0} />
+        <LineBogtom active={isMobile ? 1 : 0} />
+      </ButtonMobileMenu>
     </StyledComponent>
   );
 };
@@ -43,11 +50,17 @@ const StyledComponent = styled(Box)`
 
   padding: 30px 200px;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1440px) {
+    padding: 30px 100px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
+    padding: 20px 50px;
   }
-  @media (max-width: 430px) {
+  @media (max-width: 700px) {
+    padding: 20px 30px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px 20px;
   }
 `;
 
@@ -55,13 +68,26 @@ const LogoIcon = styled(Box)`
   display: flex;
   width: 70px;
   aspect-ratio: 1;
+
+  @media (max-width: 1024px) {
+    width: 50px;
+  }
 `;
 
 const SectionLinks = styled(Box)`
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
+const SectionSocial = styled(Box)`
+  display: flex;
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
 const ButtonMenu = styled(Box)`
   display: flex;
   width: fit-content;
@@ -74,12 +100,66 @@ const ButtonMenu = styled(Box)`
   color: ${({ active }: any) => (active ? "black" : "white")};
   background-color: ${({ active }: any) => (active ? "white" : "black")};
   border-radius: 4px;
-  margin: 0px 30px;
+  margin: 0px 20px;
 
   cursor: pointer;
   user-select: none;
 
   transition: 0.3s;
+
+  @media (max-width: 1440px) {
+    margin: 0px 15px;
+  }
+  @media (max-width: 1024px) {
+    margin: 0px 10px;
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+`;
+
+const ButtonMobileMenu = styled(Box)`
+  display: none;
+  @media (max-width: 600px) {
+    display: flex;
+  }
+
+  width: 36px;
+  height: 26px;
+  cursor: pointer;
+  user-select: none;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const LineTop = styled(Box)`
+  width: 100%;
+  height: 3px;
+  border-radius: 6px;
+  background-color: white;
+  transition: 0.3s;
+
+  transform: ${({ active }: any) =>
+    active ? "rotate(45deg)  translateY(16px)" : "none"};
+`;
+
+const LineMiddle = styled(Box)`
+  width: 100%;
+  height: 3px;
+  border-radius: 6px;
+  background-color: white;
+  transition: 0.3s;
+  opacity: ${({ active }: any) => (active ? "0" : "1")};
+`;
+
+const LineBogtom = styled(Box)`
+  width: 100%;
+  height: 3px;
+  border-radius: 6px;
+  background-color: white;
+  transition: 0.3s;
+
+  transform: ${({ active }: any) =>
+    active ? "rotate(-45deg)  translateY(-16px)" : "none"};
 `;
 
 export default Header;
