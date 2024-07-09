@@ -1,27 +1,11 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
 
-const Hero = () => {
+const Tokenomics = () => {
   return (
     <StyledComponent>
-      <SectionLeft>
-        <TextHead>himistu</TextHead>
-        <TextBody>
-          Lorem ipsum dolor sit amet consectetur. In id at pulvinar a. Enim
-          maecenas faucibus lacus enim in quis nunc vitae egestas. Tempus
-          suspendisse ut quam adipiscing egestas a viverra tristique. Dolor sed
-          tincidunt consequat penatibus
-        </TextBody>
-        <ButtonBuy>Buy Now</ButtonBuy>
-      </SectionLeft>
-      <SectionRight>
-        <img
-          src="/assets/images/backgrounds/temp01.png"
-          width={"100%"}
-          height={"100%"}
-          alt="logo"
-        />
-      </SectionRight>
+      <TextHead>Tokenomics</TextHead>
+     
     </StyledComponent>
   );
 };
@@ -29,7 +13,6 @@ const Hero = () => {
 const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
-  margin-top: 50px;
 
   @media (max-width: 768px) {
     margin-top: 30px;
@@ -143,4 +126,4 @@ const ButtonBuy = styled(Box)`
   }
 `;
 
-export default Hero;
+export default Tokenomics;

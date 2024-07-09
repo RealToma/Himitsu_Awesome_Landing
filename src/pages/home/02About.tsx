@@ -32,10 +32,7 @@ const About = () => {
 const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
-
-
   @media (max-width: 600px) {
-    margin-top: 20px;
     flex-direction: column;
   }
 `;
@@ -86,6 +83,12 @@ const TextHead = styled(Box)`
   font-size: 60px;
   @media (max-width: 1024px) {
     font-size: 50px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media (max-width: 600px) {
+    font-size: 30px;
   }
 `;
 

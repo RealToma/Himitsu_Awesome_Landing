@@ -4,6 +4,7 @@ import Hero from "./01Hero";
 import BorderSection from "../../components/border/borderSection";
 import About from "./02About";
 import Gallery from "./03Gallery";
+import Tokenomics from "./04Tokenomics";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <BorderSection />
       <Gallery />
       <BorderSection />
+      <Tokenomics />
     </StyledComponent>
   );
 };

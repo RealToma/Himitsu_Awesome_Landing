@@ -63,6 +63,13 @@ const SectionLogo = styled(Box)`
   transform: ${({ isactive }: any) =>
     isactive ? "rotate(360deg)" : "rotate(0deg)"};
   width: ${({ isactive }: any) => (isactive ? "900px" : "500px")};
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 `;
 
 const SectionButton = styled(Box)`
@@ -80,9 +87,16 @@ const SectionButton = styled(Box)`
     background: none;
     perspective: 2em;
     font-family: "Belleza", sans-serif;
-    font-size: 2em;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 1em;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
 
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
       0px 0px 0.5em 0px var(--glow-color);
@@ -260,43 +274,7 @@ const SectionButton = styled(Box)`
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    .glowing-btn {
-      font-size: 1em;
-    }
-  }
 `;
 
-const TextEnter = styled(Box)`
-  display: flex;
-
-  color: #c1ff72;
-  text-align: center;
-  font-family: Belleza;
-  font-size: ${({ isactive }: any) => (isactive ? "30px" : "60px")};
-  opacity: ${({ isactive }: any) => (isactive ? "0" : "1")};
-  font-style: normal;
-  font-weight: 850;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.7s;
-  &:active {
-    font-size: 55px;
-  }
-
-  animation: textAnimation01 1000ms ease-in infinite;
-  @keyframes textAnimation01 {
-    0% {
-      text-shadow: 0px 0px 20px #c1ff72;
-    }
-    50% {
-      text-shadow: 0px 0px 20px #c1ff7200;
-      /* transform: translate(-50%, -50%) scale(1.1); */
-    }
-    100% {
-      text-shadow: 0px 0px 20px #c1ff72;
-    }
-  }
-`;
 
 export default Enter;
