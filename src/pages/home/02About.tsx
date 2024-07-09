@@ -7,13 +7,29 @@ const About = () => {
       <SectionLeft>
         <TextHead>The Legend of $HIM</TextHead>
         <TextBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          A movement born in the trenches… A die hard community with crypto
+          comviction… We are the $HIM cult and here’s our Lore on the Solana
+          Blockchain. The original dev launched the token from 5k, the token
+          pumped to 200k and dumped all the way below 50k. On our community
+          voice chat, a legendary $HIM offered to take over the project as a
+          Community Takeover and fund everything from his own pocket, leading to
+          tens of thousands of dollars of personal expenses. Negotiations
+          began…. The original owner agreed to dump his 6% ownership stake on
+          the market which dropped us even lower than 25k market cap. Then the
+          legendary $HIM takeover began and the $HIM cult was born at that
+          moment. Everything was transferred to the community and out of the
+          trenches, $HIM was born. Since then: 2000+ holders, ATH 1.7 million An
+          average of 100+ people in community voice chat since Community Take
+          Over 20 free culture promotions by promoters and increasing. Trench
+          Warfare Gorilla Marketing coming to a billboard near you… Additional
+          Promotion in the holster to be rolled out soon…. Who is $HIM? Our
+          animal is a cat. The Cat Is Black. We are $HIM, a community of beasts
+          and people who believe in the next big cultural movement in crypto.
+          Diamond Handz, Balls of Steel, Conviction running in our Veins. We are
+          $HIM, same animal different beasts. Join the culture, buy and hold
+          $HIM. $HIM Culture, $HIM Aesthetics, $HIM Cult. Believe in something.
+          Believe in $HIM. You can be $HIM:
+          https://dexscreener.com/solana/AfUZB4Cvz9aPeAKs1D6qP1WwCcjYKWYaCQpHPu86xCD6
         </TextBody>
         <ButtonBuy>Learn More</ButtonBuy>
       </SectionLeft>
@@ -98,10 +114,10 @@ const TextBody = styled(Box)`
   font-size: 16px;
   line-height: 24px;
 
-  margin-top: 100px;
+  margin-top: 50px;
 
   @media (max-width: 1024px) {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 14px;
   }
   @media (max-width: 600px) {

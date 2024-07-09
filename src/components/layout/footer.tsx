@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import styled from "styled-components";
 const Footer = () => {
   return (
-    <StyledComponent>© 2024 Himitsu. All rights reserved.</StyledComponent>
+    <StyledComponent>© 2024 himitsu. All rights reserved.</StyledComponent>
   );
 };
 

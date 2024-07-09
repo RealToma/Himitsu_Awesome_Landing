@@ -6,7 +6,19 @@ export const SocialIconGroup = () => {
   return (
     <StyledComponent>
       {dataSocialLink?.map((each, index) => {
-        return <ButtonSocial key={index}>{each.icon}</ButtonSocial>;
+        return (
+          <a
+            href={each.link}
+            style={{
+              textDecoration: "none",
+            }}
+            key={index}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ButtonSocial>{each.icon}</ButtonSocial>
+          </a>
+        );
       })}
     </StyledComponent>
   );

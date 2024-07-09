@@ -8,8 +8,13 @@ const ContactUs = () => {
       <TextHead>Contact Us</TextHead>
       <TextBody>
         Email us at{" "}
-        <span style={{ textDecoration: "underline" }}>support@himitsu</span> for
-        any queries or support
+        <span
+          style={{ textDecoration: "underline", cursor: "pointer" }}
+          onClick={() => {}}
+        >
+          support@himitsu
+        </span>{" "}
+        for any queries or support
       </TextBody>
       <SectionSocial>
         <SocialIconGroup />

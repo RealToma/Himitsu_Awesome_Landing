@@ -45,8 +45,8 @@ export const dataMenuLink = [
     typeDapp: true,
   },
   {
-    name: "Roadmap",
-    link: "/roadmap",
+    name: "Gallery",
+    link: "/gallery",
     isDisable: true,
     typeDapp: true,
   },
