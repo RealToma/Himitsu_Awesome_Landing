@@ -10,10 +10,10 @@ const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
   height: 100px;
-  border-top: 1px solid #eeeeee50;
+  border-top: 1px solid #eeeeee70;
   align-items: center;
   justify-content: center;
-  color: #eeeeee50;
+  color: #eeeeee70;
   font-size: 14px;
   font-family: Belleza;
 `;
