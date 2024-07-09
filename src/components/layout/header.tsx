@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { dataMenuLink } from "../../data/links";
 import { SocialIconGroup } from "../icons/socialIconGroup";
+import Slide from "@mui/material/Slide";
 
 const Header = () => {
   const [clickedLink, setClickedLink] = useState(0);
@@ -37,6 +38,17 @@ const Header = () => {
         <LineMiddle active={isMobile ? 1 : 0} />
         <LineBogtom active={isMobile ? 1 : 0} />
       </ButtonMobileMenu>
+      <Slide in={isMobile} direction={"right"}>
+        <MobileMenu>
+          <LogoIcon>
+            <img
+              src="/assets/images/icons/logo.png"
+              width={"100%"}
+              alt="logo"
+            />
+          </LogoIcon>
+        </MobileMenu>
+      </Slide>
     </StyledComponent>
   );
 };
@@ -121,6 +133,10 @@ const ButtonMobileMenu = styled(Box)`
   @media (max-width: 600px) {
     display: flex;
   }
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 10000;
 
   width: 36px;
   height: 26px;
@@ -159,6 +175,21 @@ const LineBogtom = styled(Box)`
 
   transform: ${({ active }: any) =>
     active ? "rotate(-45deg)  translateY(-16px)" : "none"};
+`;
+
+const MobileMenu = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  padding: 20px 20px;
+  z-index: 1000;
+  box-sizing: border-box;
 `;
 
 export default Header;

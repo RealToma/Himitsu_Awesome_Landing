@@ -44,17 +44,27 @@ const dataChartTokenomics = {
         show: false,
       },
     },
+
     dataLabels: {
       enabled: true,
+      dropShadow: {
+        enabled: window.innerWidth < 600 ? false : true,
+        // left: 2,
+        top: 2,
+        opacity: 0.5,
+      },
       style: {
-        fontSize: "16px",
+        fontSize: window.innerWidth < 600 ? "12px" : "16px",
         fontStyle: "Belleza",
+      },
+      formatter: function (val: any, opt: any) {
+        return [val, opt.value + "%"];
       },
     },
     stroke: {
       show: false,
       width: 3,
-      curve: 'smooth',
+      curve: "smooth",
       colors: ["#ffffff"],
     },
     tooltip: {
@@ -62,11 +72,11 @@ const dataChartTokenomics = {
         fontSize: "14px",
         fontStyle: "Belleza",
       },
-      // y: {
-      //   title: {
-      //     formatter: (value: any) => value + "%",
-      //   },
-      // },
+      y: {
+        formatter: function (val: any) {
+          return val + "%";
+        },
+      },
     },
     plotOptions: {
       // treemap: {
