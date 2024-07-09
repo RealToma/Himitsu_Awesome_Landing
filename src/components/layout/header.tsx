@@ -47,6 +47,23 @@ const Header = () => {
               alt="logo"
             />
           </LogoIcon>
+          <SectionMobileLinks>
+            {dataMenuLink?.map((each: any, index: any) => {
+              return (
+                <a
+                  href={each.path}
+                  key={index}
+                  style={{ textDecoration: "none" }}
+                >
+                  <LinkMobile>{each.name}</LinkMobile>
+                </a>
+              );
+            })}
+          </SectionMobileLinks>
+          <SectionMobileFooter>
+            <SocialIconGroup />
+            <TextReserved>© 2024 himitsu. All rights reserved.</TextReserved>
+          </SectionMobileFooter>
         </MobileMenu>
       </Slide>
     </StyledComponent>
@@ -140,7 +157,7 @@ const ButtonMobileMenu = styled(Box)`
   }
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 20px;
   z-index: 10000;
 
   width: 36px;
@@ -195,6 +212,40 @@ const MobileMenu = styled(Box)`
   padding: 20px 20px;
   z-index: 1000;
   box-sizing: border-box;
+`;
+
+const SectionMobileLinks = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+`;
+
+const LinkMobile = styled(Box)`
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  font-family: Belleza;
+`;
+
+const SectionMobileFooter = styled(Box)`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  flex-direction: column;
+`;
+
+const TextReserved = styled(Box)`
+  display: flex;
+  margin-top: 20px;
+  color: #eeeeee70;
+  font-size: 14px;
+  font-family: Belleza;
 `;
 
 export default Header;
