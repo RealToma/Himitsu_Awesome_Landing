@@ -11,25 +11,25 @@ import Enter from "./pages/enter";
 
 const App = () => {
   const [isEntered, setIsEntered] = useState(false);
-  const [isLoading, setLoading] = useState(true);
-  const someRequest = (): Promise<void> => {
-    return new Promise((resolve) => setTimeout(() => resolve(), 4500));
-  };
+  // const [isLoading, setLoading] = useState(true);
+  // const someRequest = (): Promise<void> => {
+  //   return new Promise((resolve) => setTimeout(() => resolve(), 4500));
+  // };
 
-  useEffect(() => {
-    someRequest().then(() => {
-      const loaderElement = document.querySelector(".section_loading");
-      if (loaderElement) {
-        loaderElement.remove();
-        setLoading(!isLoading);
-      }
-    });
-  });
+  // useEffect(() => {
+  //   someRequest().then(() => {
+  //     const loaderElement = document.querySelector(".section_loading");
+  //     if (loaderElement) {
+  //       loaderElement.remove();
+  //       setLoading(!isLoading);
+  //     }
+  //   });
+  // });
 
-  if (isLoading) {
-    //
-    return null;
-  }
+  // if (isLoading) {
+  //   //
+  //   return null;
+  // }
 
   return (
     <StyledComponent>

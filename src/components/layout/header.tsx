@@ -88,14 +88,14 @@ const LogoIcon = styled(Box)`
 const SectionLinks = styled(Box)`
   display: flex;
   align-items: center;
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
 
 const SectionSocial = styled(Box)`
   display: flex;
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -126,11 +126,16 @@ const ButtonMenu = styled(Box)`
     font-size: 14px;
     padding: 0px 10px;
   }
+  @media (max-width: 768px) {
+    margin: 0px 5px;
+    font-size: 12px;
+    padding: 0px 8px;
+  }
 `;
 
 const ButtonMobileMenu = styled(Box)`
   display: none;
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     display: flex;
   }
   position: fixed;

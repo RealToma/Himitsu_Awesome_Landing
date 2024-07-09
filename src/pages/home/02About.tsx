@@ -22,16 +22,9 @@ const About = () => {
           average of 100+ people in community voice chat since Community Take
           Over 20 free culture promotions by promoters and increasing. Trench
           Warfare Gorilla Marketing coming to a billboard near you… Additional
-          Promotion in the holster to be rolled out soon…. Who is $HIM? Our
-          animal is a cat. The Cat Is Black. We are $HIM, a community of beasts
-          and people who believe in the next big cultural movement in crypto.
-          Diamond Handz, Balls of Steel, Conviction running in our Veins. We are
-          $HIM, same animal different beasts. Join the culture, buy and hold
-          $HIM. $HIM Culture, $HIM Aesthetics, $HIM Cult. Believe in something.
-          Believe in $HIM. You can be $HIM:
-          https://dexscreener.com/solana/AfUZB4Cvz9aPeAKs1D6qP1WwCcjYKWYaCQpHPu86xCD6
+          Promotion in the holster to be rolled out soon…
         </TextBody>
-        <ButtonBuy>Learn More</ButtonBuy>
+        {/* <ButtonBuy>Learn More</ButtonBuy> */}
       </SectionLeft>
       <SectionRight>
         <img
@@ -111,17 +104,18 @@ const TextHead = styled(Box)`
 const TextBody = styled(Box)`
   font-family: Belleza;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 
   margin-top: 50px;
 
   @media (max-width: 1024px) {
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 16px;
   }
   @media (max-width: 600px) {
     margin-top: 20px;
+    font-size: 14px;
   }
 `;
 
