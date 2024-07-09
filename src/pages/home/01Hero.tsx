@@ -2,6 +2,12 @@ import { Box } from "@mui/material";
 import styled from "styled-components";
 
 const Hero = () => {
+  const handleLearnMore = () => {
+    window.open(
+      "https://dexscreener.com/solana/AfUZB4Cvz9aPeAKs1D6qP1WwCcjYKWYaCQpHPu86xCD6"
+    );
+  };
+
   return (
     <StyledComponent id="#home">
       <SectionLeft>
@@ -17,7 +23,13 @@ const Hero = () => {
           You can be $HIM:
           https://dexscreener.com/solana/AfUZB4Cvz9aPeAKs1D6qP1WwCcjYKWYaCQpHPu86xCD6
         </TextBody>
-        <ButtonBuy>Learn More</ButtonBuy>
+        <ButtonBuy
+          onClick={() => {
+            handleLearnMore();
+          }}
+        >
+          Learn More
+        </ButtonBuy>
       </SectionLeft>
       <SectionRight>
         <img
