@@ -54,6 +54,9 @@ const Header = () => {
                   href={each.path}
                   key={index}
                   style={{ textDecoration: "none" }}
+                  onClick={() => {
+                    setIsMobile(false);
+                  }}
                 >
                   <LinkMobile>{each.name}</LinkMobile>
                 </a>
