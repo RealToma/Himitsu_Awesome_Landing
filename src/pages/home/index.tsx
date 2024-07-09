@@ -15,8 +15,8 @@ const Home = () => {
       <About />
       <BorderSection />
       <Gallery />
-      {/* <BorderSection /> */}
-      {/* <Tokenomics /> */}
+      <BorderSection />
+      <Tokenomics />
       <BorderSection />
       <ContactUs />
     </StyledComponent>

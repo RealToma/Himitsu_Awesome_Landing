@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Hero = () => {
   return (
-    <StyledComponent>
+    <StyledComponent id='#home'>
       <SectionLeft>
         <TextHead>himistu</TextHead>
         <TextBody>
@@ -101,10 +101,10 @@ const TextBody = styled(Box)`
   font-size: 16px;
   line-height: 24px;
 
-  margin-top: 100px;
+  margin-top: 50px;
 
   @media (max-width: 1024px) {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 14px;
   }
   @media (max-width: 600px) {

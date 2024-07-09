@@ -9,7 +9,7 @@ import { dataNFTsGallery } from "../../data/nfts";
 
 const Gallery = () => {
   return (
-    <StyledComponent>
+    <StyledComponent id="gallery">
       <TextHead>Meme Gallery</TextHead>
       <SectionSwiper>
         <Swiper

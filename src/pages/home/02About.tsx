@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <StyledComponent>
+    <StyledComponent id="about">
       <SectionLeft>
         <TextHead>The Legend of $HIM</TextHead>
         <TextBody>

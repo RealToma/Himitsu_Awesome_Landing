@@ -16,15 +16,16 @@ const Header = () => {
       <SectionLinks>
         {dataMenuLink?.map((each, index) => {
           return (
-            <ButtonMenu
-              key={index}
-              active={clickedLink === index ? 1 : 0}
-              onClick={() => {
-                setClickedLink(index);
-              }}
-            >
-              {each.name}
-            </ButtonMenu>
+            <a href={each.path} key={index} style={{ textDecoration: "none" }}>
+              <ButtonMenu
+                active={clickedLink === index ? 1 : 0}
+                onClick={() => {
+                  setClickedLink(index);
+                }}
+              >
+                {each.name}
+              </ButtonMenu>
+            </a>
           );
         })}
       </SectionLinks>

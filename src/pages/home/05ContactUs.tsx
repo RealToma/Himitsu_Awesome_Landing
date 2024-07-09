@@ -4,7 +4,7 @@ import { SocialIconGroup } from "../../components/icons/socialIconGroup";
 
 const ContactUs = () => {
   return (
-    <StyledComponent>
+    <StyledComponent id='contactus'>
       <TextHead>Contact Us</TextHead>
       <TextBody>
         Email us at{" "}

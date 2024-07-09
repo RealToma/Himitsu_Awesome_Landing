@@ -1,11 +1,110 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
+import Chart from "react-apexcharts";
+
+const dataChartTokenomics = {
+  series: [
+    {
+      data: [
+        {
+          x: "Community and Airdrops",
+          y: 40,
+        },
+        {
+          x: "Social Media Airdrops",
+          y: 15,
+        },
+        {
+          x: "Team",
+          y: 5,
+        },
+        {
+          x: "Marketing",
+          y: 5,
+        },
+        {
+          x: "Reserve",
+          y: 10,
+        },
+        {
+          x: "Liquidity Pool",
+          y: 25,
+        },
+      ],
+    },
+  ],
+  options: {
+    legend: {
+      show: false,
+    },
+    chart: {
+      height: 350,
+      type: "treemap",
+      toolbar: {
+        show: false,
+      },
+    },
+    dataLabels: {
+      enabled: true,
+      style: {
+        fontSize: "16px",
+        fontStyle: "Belleza",
+      },
+    },
+    stroke: {
+      show: false,
+      width: 3,
+      curve: 'smooth',
+      colors: ["#ffffff"],
+    },
+    tooltip: {
+      style: {
+        fontSize: "14px",
+        fontStyle: "Belleza",
+      },
+      // y: {
+      //   title: {
+      //     formatter: (value: any) => value + "%",
+      //   },
+      // },
+    },
+    plotOptions: {
+      // treemap: {
+      //   enableShades: true,
+      //   shadeIntensity: 0.5,
+      //   reverseNegativeShade: true,
+      //   colorScale: {
+      //     ranges: [
+      //       {
+      //         from: 0,
+      //         to: 100,
+      //         color: "#000000",
+      //       },
+      //     ],
+      //   },
+      // },
+      treemap: {
+        distributed: true,
+        enableShades: true,
+        shadeIntensity: 0,
+        reverseNegativeShade: true,
+      },
+    },
+  },
+};
 
 const Tokenomics = () => {
   return (
-    <StyledComponent>
+    <StyledComponent id="tokenomics">
       <TextHead>Tokenomics</TextHead>
-     
+      <SectionChart>
+        <Chart
+          options={dataChartTokenomics.options}
+          series={dataChartTokenomics?.series}
+          // height={300}
+          type="treemap"
+        />
+      </SectionChart>
     </StyledComponent>
   );
 };
@@ -13,16 +112,8 @@ const Tokenomics = () => {
 const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
-
-  @media (max-width: 768px) {
-    margin-top: 30px;
-  }
-  @media (max-width: 600px) {
-    margin-top: 20px;
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
-
 
 const TextHead = styled(Box)`
   font-family: Belleza;
@@ -39,5 +130,23 @@ const TextHead = styled(Box)`
   }
 `;
 
+const SectionChart = styled(Box)`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  > div {
+    width: 60%;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 30px;
+    > div {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+`;
 
 export default Tokenomics;
